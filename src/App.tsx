@@ -19,6 +19,7 @@ import {
   Linkedin,
   Twitter
 } from 'lucide-react';
+import alarmlogo from './assets/alarmlogo.png';
 
 function ValuePillar({ icon: Icon, title, description }: { icon: React.ElementType, title: string, description: string }) {
   return (
@@ -322,9 +323,9 @@ function App() {
             </motion.div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1504384764586-bb4cdc1707b0" 
-                alt="Security Operations Center" 
-                className="w-full h-full object-cover"
+                src={alarmlogo} 
+                alt="Generic Security Logo" 
+                className="w-full h-full object-contain p-8"
               />
               <div className="absolute inset-0 bg-gradient-to-l from-indigo-900/0 to-indigo-900 md:hidden"></div>
             </div>
